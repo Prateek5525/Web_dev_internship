@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root {
+    --maincolor: #163235;
+    --secondclr: #4468E2;
+    --thirdcolor: #1C4961;
+    --background: #F3F4F6;
+    --textcolor: #333;
+    --accent: #F39C12;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .2s;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--textcolor);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    padding: 2rem 5%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 1000;
+    background-color: white;
+}
+
+.header #logo {
+    color: var(--maincolor);
+    font-size: 3rem;
+}
+
+.header #logo span {
+    color: var(--secondclr);
+}
+
+.navbar a {
+    font-size: 1.7rem;
+    margin-left: 1rem;
+    padding: 1rem;
+    color: var(--maincolor);
+}
+
+.navbar a:hover {
+    color: var(--accent);
+}
+
+.icons #menu-bars {
+    font-size: 2rem;
+    color: black;
+    display: none;
+}
+
+.icons #menu-bars:hover {
+    color: var(--secondclr);
+}
+
+.background-image {
+    position: relative;
+    background: url(images/background.png) no-repeat center center/cover;
+    width: 100%;
+    height: 100vh;
+    margin-top: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+}
+
+.background-image h1 {
+    font-size: 5rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.background-image h1 span {
+    color: var(--secondclr);
+}
+
+.background-image p {
+    color: white;
+    font-size: 1.6rem;
+    padding: 0 2rem;
+    margin-bottom: 2rem;
+}
+
+.background-image a {
+    padding: 1.5rem 3rem;
+    color: white;
+    font-size: 1.6rem;
+    background: var(--secondclr);
+    border-radius: 5px;
+}
+
+.background-image a:hover {
+    background: var(--accent);
+    transform: scale(1.05);
+}
+
+.our-services {
+    padding: 5rem 10%;
+    background-color: var(--background);
+}
+
+.our-services h1 {
+    color: var(--maincolor);
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.our-services h1 span {
+    color: var(--secondclr);
+}
+
+.main-services {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.main-services .inner-service {
+    flex: 1 1 300px;
+    background-color: white;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    height: 100%;
+}
+
+.inner-icons img {
+    width: 70px;
+    margin-bottom: 1.5rem;
+}
+
+.inner-service h2 {
+    font-size: 2.4rem;
+    color: var(--maincolor);
+    margin-bottom: 1rem;
+}
+
+.inner-service h2 span {
+    color: var(--secondclr);
+}
+
+.inner-service p {
+    color: var(--textcolor);
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+}
+
+.recommended-destination {
+    padding: 5rem 10%;
+    background-color: white;
+}
+
+.recommended-destination h1 {
+    font-size: 4rem;
+    text-align: center;
+    color: var(--maincolor);
+    margin-bottom: 3rem;
+}
+
+.recommended-destination h1 span {
+    color: var(--secondclr);
+}
+
+.main-destination {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.main-destination .inner-destination {
+    flex: 1 1 300px;
+    background-color: var(--background);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    text-align: center;
+    height: 100%;
+}
+
+.inner-destination .main-image img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.inner-destination h2 {
+    font-size: 2.4rem;
+    color: var(--maincolor);
+    margin-bottom: 1rem;
+}
+
+.inner-destination p {
+    font-size: 1.6rem;
+    color: var(--textcolor);
+    margin-bottom: 1.5rem;
+}
+
+.dist-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.our-blog {
+    padding: 5rem 10%;
+    background-color: var(--background);
+}
+
+.our-blog h1 {
+    color: var(--maincolor);
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.our-blog h1 span {
+    color: var(--secondclr);
+}
+
+.main-blog {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.inner-blog {
+    flex: 1 1 300px;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    text-align: center;
+    height: 100%;
+}
+
+.inner-blog img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.inner-blog h2 {
+    font-size: 2.4rem;
+    color: var(--maincolor);
+    margin-bottom: 1rem;
+}
+
+.inner-blog p {
+    font-size: 1.6rem;
+    color: var(--textcolor);
+}
+
+.blog-images {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.blog-images img {
+    width: 100%;
+    border-radius: 10px;
+    height: 175px;
+}
+
+.reviews {
+    padding: 5rem 10%;
+    background-color: white;
+}
+
+.reviews h1 {
+    color: var(--maincolor);
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 3rem;
+}
+
+.reviews h1 span {
+    color: var(--secondclr);
+}
+
+.main-review {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.inner-review {
+    flex: 1 1 300px;
+    padding: 2rem;
+    background-color: var(--background);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    height: 100%;
+}
+
+.inner-review p {
+    font-size: 1.6rem;
+    color: var(--textcolor);
+    margin-bottom: 1.5rem;
+}
+
+.review-client {
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.review-client img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.review-client span {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--secondclr);
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 55%;
+    }
+
+    .icons #menu-bars {
+        display: initial;
+    }
+
+    .header {
+        padding: 2rem;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 100%;
+        right: 0;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        padding: 1rem;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 1.5rem;
+        margin: 1rem 0;
+        padding: 1rem;
+        text-align: center;
+        color: var(--maincolor);
+    }
+
+    .background-image {
+        padding: 2rem 5%;
+    }
+
+    .our-services,
+    .recommended-destination,
+    .our-blog,
+    .reviews {
+        padding: 3rem 5%;
+    }
+}
