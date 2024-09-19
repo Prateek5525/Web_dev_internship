@@ -1,4 +1,3 @@
-# Web_dev_internship
 # Travel Agency Landing Page
 ## Internship Project: Afame Technologies 
 
