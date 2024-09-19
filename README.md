@@ -1,5 +1,6 @@
 # Web_dev_internship
 # Travel Agency Landing Page
+## Internship Project: Afame Technologies 
 
 ## Overview
 This project is a landing page for a travel agency website. It showcases various services, recommended destinations, blog posts, and customer reviews. The design is modern, responsive, and visually appealing.
